@@ -1,0 +1,26 @@
+:root {
+  --primary: #05386b;
+  --secondary: #5cdb95;
+  --alternate-blue: #379683;
+  --alternate-green: #8ee4af;
+  --light: #edf5e1;
+  --grey: #b6b6b6;
+}
+
+.container {
+  background-color: var(--grey);
+  padding: 30px;
+}
+
+.list-items {
+  display: flex;
+  flex-direction: column;
+  max-width: 540px;
+}
+
+.list-title {
+  display: block;
+}
+
+@media screen and (max-width: 1200px) {
+}

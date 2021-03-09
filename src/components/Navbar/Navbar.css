@@ -1,0 +1,146 @@
+:root {
+  --primary: #05386b;
+  --secondary: #5cdb95;
+  --alternate-blue: #379683;
+  --alternate-green: #8ee4af;
+  --light: #edf5e1;
+}
+
+.NavbarItems {
+  /* background: linear-gradient(
+    90deg,
+    var(--primary) 0%,
+    var(--alternate-blue) 100%
+  ); */
+  background-color: var(--secondary);
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.navbar-logo {
+  color: #fff;
+  justify-self: start;
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+.fa-react {
+  margin-left: 0.5rem;
+  font-size: 1.6rem;
+}
+
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 10px;
+  list-style: none;
+  text-align: center;
+  width: 180vh;
+  justify-content: end;
+  margin-right: 2rem;
+}
+
+.nav-links {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem, 1rem;
+  margin: 20px;
+  padding: 4px;
+}
+
+.nav-links:hover {
+  background-color: rgba(231, 244, 244, 0.3);
+  border-radius: 4px;
+  transition: all 0.15s ease-in-out;
+}
+
+.fa-bars {
+  color: #fff;
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .NavbarItems {
+    position: relative;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 80px;
+    left: -500%;
+    opacity: 1;
+    transition: all 0.5s ease-out;
+  }
+
+  .nav-menu.active {
+    background: var(--primary);
+    left: 0;
+    opacity: 1;
+    transition: all 0.5 ease;
+  }
+
+  .nav-links {
+    text-align: center;
+    margin: 0;
+    padding: 2rem;
+    width: 100%;
+    display: grid;
+  }
+
+  .nav-links:hover {
+    background-color: var(--secondary);
+    color: var(--primary);
+    border-radius: 0;
+  }
+
+  .navbar-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(25%, -25%);
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .fa-times {
+    color: #fff;
+    font-size: 2rem;
+  }
+}
+
+/* .nav-links-mobile {
+  display: block;
+  text-align: center;
+  padding: 1.5rem;
+  margin: 2rem auto;
+  border-radius: 4px;
+  width: 80%;
+  background: #4ad9e4;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.nav-links-mobile:hover {
+  background: #fff;
+  color: #6568f4;
+  transition: 250ms; 
+}*/
