@@ -1,11 +1,12 @@
 import React from 'react';
 import HeroSection from '../components/HeroSection/HeroSection';
-// import Profile from '../components/Profile';
+import Profile from '../components/Profile';
 import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour, homeObjFive } from './HomeData';
 
 function Home() {
   return (
     <div className="App">
+      <Profile />
       <HeroSection {...homeObjOne} />
       <HeroSection {...homeObjTwo} />
       <HeroSection {...homeObjThree} />

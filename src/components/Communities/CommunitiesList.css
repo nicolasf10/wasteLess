@@ -1,0 +1,199 @@
+:root {
+  --primary: #05386b;
+  --secondary: #5cdb95;
+  --alternate-blue: #379683;
+  --alternate-green: #8ee4af;
+  --light: #edf5e1;
+  --grey: #b6b6b6;
+}
+
+.communitiesList {
+  background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.communitiesListTitle {
+  text-align: center;
+  width: 100%;
+  font-size: 38px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.communityName {
+  margin-left: 40px;
+  width: 80%;
+}
+
+.containerList {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 520px;
+  min-height: 600px;
+  background: #161a2b;
+  text-align: center;
+  margin: 20px auto;
+  border-radius: 10px;
+  padding-bottom: 32px;
+}
+
+.communityItem {
+  font-style: "Monstserrat", sans-serif;
+  margin: 5px auto;
+  width: 95%;
+  border-radius: 6px;
+  background: linear-gradient(
+    90deg,
+    rgba(20, 159, 255, 1) 0%,
+    rgba(17, 122, 255, 1) 100%
+  );
+  text-decoration: none;
+}
+
+.communityRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
+  color: #fff;
+  max-height: 60px;
+}
+
+.addCommunity {
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  font-size: 36px;
+  color: #fff;
+  width: 95%;
+  height: 40px;
+  background: linear-gradient(
+    90deg,
+    rgb(35, 220, 124) 0%,
+    rgb(0, 155, 101) 100%
+  );
+  margin: 10px auto;
+}
+
+.closeAddCommunity {
+  cursor: pointer;
+  border-radius: 100%;
+  border: none;
+  font-size: 36px;
+  color: #fff;
+  width: 75px;
+  height: 75px;
+  background: linear-gradient(
+    90deg,
+    rgb(35, 220, 124) 0%,
+    rgb(0, 155, 101) 100%
+  );
+  float: right;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.communityFormContainer {
+  width: 75%;
+  height: 75%;
+  border-radius: 15px;
+  margin: auto;
+  position: absolute;
+  left: 12.5%;
+  top: 17.5%;
+  background: var(--primary);
+  pointer-events: auto;
+}
+
+.communityFormSubmit {
+  border: none;
+  background: linear-gradient(
+    90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(155, 0, 250, 1) 100%
+  );
+  padding: 10px;
+  color: #fff;
+  height: 75px;
+  width: 150px;
+  border-radius: 0px 10px 10px 0px;
+}
+
+#communityForm input[type="text"] {
+  font-size: 18px;
+  text-align: center;
+}
+
+.communityFormInput {
+  height: 75px;
+  border-radius: 10px 0px 0px 10px;
+  border: none;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.communityFormControls {
+  width: 100%;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.communityForm {
+  margin-top: 100px;
+}
+
+.communityFormTitle {
+  color: #fff;
+  margin-top: 30px;
+  width: 100%;
+  font-size: 48px;
+  text-align: center;
+}
+
+.communityFormInput::placeholder {
+  color: var(--grey);
+  font-size: 21px;
+  text-align: center;
+}
+
+.iconsCommunity {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 5px;
+  justify-self: right;
+}
+
+@media screen and (max-width: 1000px) {
+  .containerList {
+    width: 85%;
+  }
+
+  .containerListTitle {
+    font-size: 28px;
+  }
+
+  .communityFormSubmit {
+    width: 75px;
+  }
+
+  .communityFormInput {
+    width: 150px;
+  }
+
+  #communityForm input[type="text"] {
+    font-size: 12px;
+    text-align: center;
+    color: black;
+  }
+
+  .communityFormInput::placeholder {
+    font-size: 12px;
+  }
+}

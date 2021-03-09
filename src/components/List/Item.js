@@ -3,7 +3,6 @@ import ListForm from './ListForm';
 import { RiCloseCircleLine } from 'react-icons/ri';
 import { TiEdit } from 'react-icons/ti';
 import { GiCookingPot } from 'react-icons/gi';
-import { findRenderedComponentWithType } from 'react-dom/test-utils';
 
 function Item({items, completeItem, removeItem, updateItem}) {
     const [edit, setEdit] = useState({

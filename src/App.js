@@ -1,11 +1,11 @@
 import './App.css';
 import Navbar from './components/Navbar/Navbar'
 import Home from './pages/Home';
-import ShopList from './pages/ShopList'
+import ShopList from './pages/ShopList';
 import Resources from './pages/Resources';
-import Recipes from './pages/Recipes';
+import Communities from './pages/Communities';
+import CommunitiesPosts from './pages/CommunitiesPosts';
 import PageNotFound from './pages/PageNotFound';
-import Profile from './components/Profile'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 function App() {
@@ -18,7 +18,8 @@ function App() {
           <Route path="/" exact component={Home}/>
           <Route path="/resources" exact component={Resources}/>
           <Route path="/enterprise-waste" exact component={Home}/>
-          <Route path="/communities" exact component={Home}/>
+          <Route path="/communities" exact component={Communities}/>
+          <Route path="/communities-posts/:community_id" exact component={CommunitiesPosts}/>
           <Route path="/shop-list" exact component={ShopList}/>
           <Route component={PageNotFound} />
         </Switch>

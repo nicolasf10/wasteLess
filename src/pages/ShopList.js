@@ -11,10 +11,8 @@ function Resources() {
   useEffect(() => {
     if (!isAuthenticated) {
       loginWithRedirect()
-    } else {
-      console.log("Changed!")
     }
-  })
+  }, [])
 
   return (
     <div className='lists'>
