@@ -22,7 +22,7 @@ function App() {
           <Route path="/communities" exact component={Communities}/>
           <Route path="/communities-posts/:community_id" exact component={CommunitiesPosts}/>
           <Route path="/shop-list" exact component={ShopList}/>
-          <Route component={PageNotFound} />
+          <Route component={Home} />
         </Switch>
       </div>
     </HashRouter>
