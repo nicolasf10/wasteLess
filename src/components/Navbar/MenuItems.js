@@ -18,5 +18,11 @@ export const MenuItems = [
         title:'Enterprise Waste',
         url: '/enterprise-waste',
         className: 'nav-links'
+    },
+    ,
+    {
+        title:'COVID-19',
+        url: '/covid-guidelines',
+        className: 'nav-links'
     }
 ]

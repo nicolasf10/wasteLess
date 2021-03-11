@@ -213,6 +213,47 @@
   }
 }
 
+@media screen and (max-height: 800px) {
+  .postFormTitle {
+    font-size: 28px;
+  }
+
+  .postFormInput {
+    height: 60px;
+  }
+}
+
+@media screen and (max-height: 580px) {
+  .postFormInput {
+    height: 40px;
+  }
+
+  .postFormSubmit {
+    height: 50px;
+  }
+
+  .postForm {
+    height: 90vh;
+    top: 5%;
+  }
+}
+@media screen and (max-height: 500px) {
+  .postFormInput {
+    height: 30px;
+  }
+}
+
+@media screen and (max-height: 455px) {
+  #postForm {
+    position: relative;
+    bottom: 30px;
+  }
+
+  .postFormSubmit {
+    height: 35px;
+  }
+}
+
 @media screen and (max-width: 400px) {
   .postFormTitle {
     font-size: 21px;

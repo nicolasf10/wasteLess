@@ -98,10 +98,11 @@ const CommunitiesFeed = (props) => {
         .then(data => {
             if (typeof data.results[0] === 'undefined') {
                 alert("No image was found for your product. Your post will not contain a picture.")
+            } else {
+                console.log(`https://spoonacular.com/cdn/ingredients_500x500/${data.results[0].image}`)
+                productImgUrl = `https://spoonacular.com/cdn/ingredients_500x500/${data.results[0].image}`
             }
-            console.log(`https://spoonacular.com/cdn/ingredients_500x500/${data.results[0].image}`)
-            productImgUrl = `https://spoonacular.com/cdn/ingredients_500x500/${data.results[0].image}`
-        }).then(_ => {
+            }).then(_ => {
         fetch(url, {
           method: 'PUT',
           body: JSON.stringify({
