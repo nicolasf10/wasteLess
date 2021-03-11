@@ -11,7 +11,7 @@ import {HashRouter, Switch, Route} from 'react-router-dom';
 
 function App() {
   return (
-    <HashRouter basename={process.env.PUBLIC_URL}>
+    <HashRouter basename='/'>
       <div className="App">
         <Navbar />
         <Switch>
