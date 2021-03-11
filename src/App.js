@@ -7,11 +7,11 @@ import Communities from './pages/Communities';
 import CommunitiesPosts from './pages/CommunitiesPosts';
 import CovidGuidelines from './pages/CovidGuidelines';
 import PageNotFound from './pages/PageNotFound';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import {HashRouter, Switch, Route} from 'react-router-dom';
 
 function App() {
   return (
-    <Router>
+    <HashRouter>
       <div className="App">
         <Navbar />
         <Switch>
@@ -25,7 +25,7 @@ function App() {
           <Route component={PageNotFound} />
         </Switch>
       </div>
-    </Router>
+    </HashRouter>
   );
 }
 
