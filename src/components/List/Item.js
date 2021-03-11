@@ -20,7 +20,7 @@ function Item({items, completeItem, removeItem, updateItem}) {
     }
 
     const findRecipe = (ingredient) => {
-        const apiKey = 'e8e9caad08934b97b5019757a0647419'
+        const apiKey = 'a39a612f4e0d4fecbb8d1ffa2cb64c50'
         const recipe_url = 'https://api.spoonacular.com/recipes/search?apiKey=' + apiKey + '&number=1&query=' + ingredient
 
         try {

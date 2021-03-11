@@ -41,6 +41,7 @@
   width: 180vh;
   justify-content: end;
   margin-right: 2rem;
+  z-index: 1;
 }
 
 .nav-links {
@@ -49,6 +50,7 @@
   padding: 0.5rem, 1rem;
   margin: 20px;
   padding: 4px;
+  z-index: 2;
 }
 
 .nav-links:hover {

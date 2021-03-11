@@ -13,7 +13,6 @@ function App() {
     <Router>
       <div className="App">
         <Navbar />
-        {/* <Profile /> */}
         <Switch>
           <Route path="/" exact component={Home}/>
           <Route path="/resources" exact component={Resources}/>

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './CommunitiesList.css';
 import { useAuth0 } from '@auth0/auth0-react';
 import CommunityItem from './CommunityItem';
+import { RiCloseCircleLine } from 'react-icons/ri';
 
 const CommunitiesList = () => {
     const { user, isAuthenticated } = useAuth0();
@@ -173,7 +174,7 @@ const CommunitiesList = () => {
         <div className='communitiesList'>
             <h1 className='communitiesListTitle'>Your communities:</h1>
             <div style={{display: (displayNew ? 'block' : 'none')}} className='communityFormContainer'>
-                <button onClick={() => setDisplayNew(!displayNew)} className='closeAddCommunity'>-</button>
+            <RiCloseCircleLine onClick={() => setDisplayNew(!displayNew)} className='close-form-icon'/>
                 <form id="communityForm" className='communityForm' onSubmit={addCommunity}>
                     <h2 className='communityFormTitle'>Community Id:</h2>
                     <div className='communityFormControls'>

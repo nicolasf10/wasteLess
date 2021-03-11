@@ -1,0 +1,228 @@
+:root {
+  --primary: #05386b;
+  --secondary: #5cdb95;
+  --alternate-blue: #379683;
+  --alternate-green: #8ee4af;
+  --light: #edf5e1;
+  --dark: #161a2b;
+}
+
+.all-posts {
+  display: flex;
+  flex-direction: column-reverse;
+  height: 100%;
+  position: relative;
+  bottom: 45px;
+}
+
+.addButtonCommunity {
+  cursor: pointer;
+  border: none;
+  position: relative;
+  padding: 10px;
+  border-radius: 10px;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  background: linear-gradient(
+    90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(155, 0, 250, 1) 100%
+  );
+  font-size: 18px;
+  color: #fff;
+}
+
+.individual-post {
+  background-color: var(--dark);
+  margin: 7.5px auto;
+  width: 95%;
+  border-radius: 10px;
+  line-height: 20px;
+}
+
+.delete-post-icon {
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.top-feed {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.feed-title {
+  color: var(--light);
+  text-align: center;
+  width: 100%;
+  font-weight: 900;
+  font-size: 40px;
+}
+
+.posts-page {
+  width: 100%;
+  min-height: 100vh;
+  overflow-y: hidden;
+  margin: 0;
+  background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+}
+
+.postFormTitle {
+  font-size: 42px;
+  width: 100%;
+  text-align: center;
+}
+
+.postForm {
+  width: 75%;
+  height: 80vh;
+  border-radius: 15px;
+  margin: auto;
+  position: fixed;
+  left: 12.5%;
+  top: 10vh;
+  overflow-y: visible;
+  background: var(--primary);
+  pointer-events: auto;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.postFormSubmit {
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(
+    90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(155, 0, 250, 1) 100%
+  );
+  padding: 10px;
+  color: #fff;
+  height: 75px;
+  width: 150px;
+  border-radius: 10px;
+}
+
+#postForm input[type="text"] {
+  font-size: 18px;
+  text-align: center;
+}
+
+#postForm {
+  z-index: 1;
+}
+
+.postFormInputContainer {
+  width: 100%;
+  text-align: center;
+}
+
+.postFormSelect {
+  width: 100px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.productImage {
+  width: 40%;
+  max-width: 300px;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.postContent {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.close-form-icon {
+  color: #fff;
+  font-size: 36px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.postFormInput {
+  height: 75px;
+  border-radius: 10px;
+  margin-top: 10px;
+  justify-self: center;
+  border: none;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.postProduct,
+.postRequestType,
+.postContactInformation {
+  color: #fff;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.postUserArea {
+  display: flex;
+  flex-direction: row;
+  vertical-align: middle;
+  background-color: grey;
+  border-radius: 30px 10px 10px 30px;
+  padding: 7px;
+  margin: 10px;
+}
+
+.userPicture {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  display: inline;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.postUsername {
+  color: #fff;
+  display: inline;
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 7.5px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.postQuantity {
+  margin: 5px;
+  color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+  .postFormTitle {
+    font-size: 28px;
+  }
+
+  .postFormInput {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .postFormTitle {
+    font-size: 21px;
+  }
+
+  .postFormInput {
+    width: 150px;
+  }
+
+  .close-form-icon {
+    font-size: 28px;
+  }
+}

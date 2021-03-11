@@ -6,7 +6,6 @@ import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour, homeObjFive } from '
 function Home() {
   return (
     <div className="App">
-      <Profile />
       <HeroSection {...homeObjOne} />
       <HeroSection {...homeObjTwo} />
       <HeroSection {...homeObjThree} />

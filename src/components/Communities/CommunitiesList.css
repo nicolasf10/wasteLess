@@ -78,25 +78,6 @@
   margin: 10px auto;
 }
 
-.closeAddCommunity {
-  cursor: pointer;
-  border-radius: 100%;
-  border: none;
-  font-size: 36px;
-  color: #fff;
-  width: 75px;
-  height: 75px;
-  background: linear-gradient(
-    90deg,
-    rgb(35, 220, 124) 0%,
-    rgb(0, 155, 101) 100%
-  );
-  float: right;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
-
 .communityFormContainer {
   width: 75%;
   height: 75%;
@@ -107,6 +88,15 @@
   top: 17.5%;
   background: var(--primary);
   pointer-events: auto;
+}
+
+.close-form-icon {
+  color: #fff;
+  font-size: 36px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
 }
 
 .communityFormSubmit {
